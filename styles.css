@@ -1,0 +1,91 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+
+html {
+    scroll-padding-top: 10vh;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to left, white 20%, black 80%);
+}
+.header_kitfo h1 {
+    font-size: 20px;
+    color: white;
+}
+.header_nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.header_nav a {
+    font-size: 18px;
+    color: black;
+}
+
+
+section {
+    width: 100vw;
+    height: 90vh;
+}
+.section_small{
+    width: 100vw;
+    height: 20vh;
+    background-color: black;
+}
+
+
+.home {
+    height: 50vh;
+}
+.home_container {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home_container img {
+    width: 10vw;
+    border-radius: 50%;
+    border: solid pink;
+}
+.home h1 {
+    font-size: 20px;
+    text-align: center;
+}
+.home p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.about {
+    background: radial-gradient(circle, gray 20%, black 100%);
+}
+
+/* Here ako i adjust ang screen para maka adapt sa lain - Lord please */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: fit-content;
+        align-items: center;
+    }
+
+    .header_nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+}
