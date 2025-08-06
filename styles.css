@@ -61,7 +61,7 @@ section {
     overflow: auto;
 }
 .home_container img {
-    width: 100px;
+    height: 15vh;
     border-radius: 50%;
     border: solid pink;
     flex-shrink: 1;
