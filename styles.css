@@ -4,10 +4,9 @@
 
 
 html {
-    scroll-padding-top: 10vh;
+    scroll-padding: 10vh;
     scroll-behavior: smooth;
 }
-
 
 header {
     width: 100vw;
@@ -40,16 +39,10 @@ section {
     width: 100vw;
     height: 90vh;
 }
-.section_small{
-    width: 100vw;
-    height: 10vh;
-    background-color: black;
-}
-
 
 .home {
     height: 50vh;
-    background: radial-gradient(circle, gray 20%, black 100%);
+    background: radial-gradient(circle, gray 50%, black 100%);
 }
 .home_container {
     width: 100vw;
@@ -66,6 +59,7 @@ section {
     border-radius: 50%;
     border: solid black;
     box-shadow: 0 0 10px white;
+
 }
 .home h1 {
     font-size: 20px;
@@ -75,6 +69,27 @@ section {
     text-align: center;
     font-size: 16px;
     padding: 0 20px;
+}
+
+.section_small{
+    width: 100vw;
+    min-height: 10vh;
+    background-color: black;
+}
+.small_1 {
+    width: 100vw;
+    min-height: 100%;
+    background-color: rgba(255, 255, 0, 0.432);
+}
+.small_1 p {
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px 0px 20px;
+}
+.small_1 h1 {
+    color: white;
+    font-size: 16px;
+    padding: 0 20px 10px 40px;
 }
 
 .about {
