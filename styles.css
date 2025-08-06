@@ -98,17 +98,11 @@ section {
 }
 .about_container {
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     border: solid pink; 
     overflow: auto;
-}
-.about_container img {
-    border: solid black;
-    border-radius: 50%;
-    width: 200px;
 }
 .about_left {
     border: solid pink;
@@ -116,16 +110,44 @@ section {
     align-items: center;
     text-align: center;
 }
+.profile {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.profile img {
+    border: solid black;
+    border-radius: 50%;
+    width: 200px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .about_right {
     border: solid pink;
     width: 70vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 100px;
     padding: 0 30px;
+    padding-top: 20px;
+}
+.about_right_header {
+    text-align: center;
+    justify-items: center;
+}
+.about_right_header h1 {
+    font-size: 20px;
+}
+.about_right_header p {
+    font-size: 16px;
 }
 .about_right_boxes {
     border: solid black;
     text-align: center;
+    width: 40%;
+    box-shadow: 0 0 10px black;
 }
 
 /* Here ako i adjust ang screen para maka adapt sa lain - Lord please */
@@ -143,5 +165,8 @@ section {
         flex-direction: column;
         gap: 20px;
         padding: 0 0;
+    }
+    .about_right_boxes {
+        width: auto;
     }
 }
